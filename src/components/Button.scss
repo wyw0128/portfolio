@@ -1,0 +1,28 @@
+button {
+  transition: all 0.5s ease-out;
+  padding: 5px 10px;
+  cursor: pointer;
+  &.normal {
+    // display: flex;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: all 0.5s ease-out;
+    &:hover {
+      background-color: rgb(232, 232, 232);
+      border-radius: 10px;
+    }
+  }
+  &.round {
+    // display: flex;
+    border: 1px solid #888;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 24px;
+    font-size: 0.875rem;
+    &:hover {
+      background-color: rgb(232, 232, 232);
+    }
+  }
+}

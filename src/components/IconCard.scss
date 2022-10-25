@@ -1,0 +1,21 @@
+.icon-card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-card-title {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.icon-card-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.icon-card-content {
+  margin: 0;
+  padding: 0;
+}
