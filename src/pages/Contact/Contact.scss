@@ -1,0 +1,23 @@
+.contact-lists {
+  list-style-type: none;
+  padding: 0 1rem 2rem 1rem;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-medias {
+  width: 90%;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-link {
+  &:visited {
+    color: black;
+  }
+}

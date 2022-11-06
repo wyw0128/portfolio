@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // import Button from "@mui/material/Button";
-import Button from "./Button";
+import Button from "../Button/Button";
 import "./Header.scss";
 
 export default function Header() {

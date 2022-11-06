@@ -1,0 +1,80 @@
+@import "../../styles/colors";
+.basic-infos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  span {
+    color: #aaaaaa;
+  }
+  p {
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 16px;
+    color: #666666;
+  }
+}
+
+.self-portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    border: 1px solid $medium-grey;
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 24px;
+    font-size: 0.875rem;
+    &:hover {
+      background-color: $light-grey;
+      color: $secondary;
+    }
+  }
+}
+
+.icon-cards {
+  padding: 2rem 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 50px;
+}
+
+.icon-card-wrapper {
+  padding-left: 16px;
+}
+
+.favorites {
+  overflow: hidden;
+}
+
+.sliders-container {
+  display: grid;
+  grid-template-columns: repeat(4, 50%);
+  grid-column-gap: 1rem;
+  padding: 2rem 0 0 0;
+}
+
+.slide-wrapper {
+  padding: 1rem 1rem;
+}
+
+.sliders-btn {
+  display: flex;
+  justify-content: center;
+}

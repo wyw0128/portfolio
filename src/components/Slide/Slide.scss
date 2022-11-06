@@ -1,0 +1,20 @@
+@import "../../styles/colors";
+.slider-container {
+  position: relative;
+  border: 1px solid $light-grey;
+  border-radius: 9px;
+}
+.icon-container {
+  position: absolute;
+  top: -18px;
+  left: -15px;
+}
+.slide-contents-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 1rem;
+  padding-left: 3rem;
+  img {
+    border-radius: 0 9px 9px 0;
+  }
+}

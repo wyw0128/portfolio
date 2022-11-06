@@ -1,0 +1,37 @@
+@import "../../styles/colors";
+.timeline-card-container {
+  padding: 60px 0 10px 20px;
+  border-left: 1.5px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  position: relative;
+}
+.card-title {
+  span {
+    color: $text-title-grey;
+    font-size: 1rem;
+  }
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  top: 1.2rem;
+  left: -1.5rem;
+}
+
+.year {
+  padding: 8px 20px;
+  border: 2px solid $dark-grey;
+  border-radius: 1.8rem;
+  background-color: white;
+}
+
+.timeline-title {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.description {
+  color: $text-title-grey;
+  line-height: 1.5rem;
+}

@@ -1,10 +1,10 @@
+@import "styles/colors";
 .App {
-  background-color: #dc7f8e;
+  background-color: $primary;
   padding: 5% 10%;
-  height: 100vh;
   .app-container {
-    padding: 16px 50px;
-    background-color: #fff;
+    padding: 3rem 6rem;
+    background-color: white;
     border-radius: 40px;
   }
 }
@@ -17,4 +17,51 @@ h5 {
   padding: 8.4px 0;
   // NOTE: Compared to display: inline, the major difference is that inline-block allows to set a width and height on the element. Also, with display: inline, top and bottom margins & paddings are not respected, and with display: inline-block they are.
   display: inline-block;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-underline {
+  position: relative;
+  padding: 6px 0;
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    content: "";
+    background-color: $light-grey;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 2.5px;
+    content: "";
+    background-color: $primary;
+  }
+}
+
+.page {
+  padding: 1.5rem;
+}
+
+.page-title-container {
+  padding: 2rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.grey-container {
+  background-color: #fcfcfc;
+  border-bottom: 2px solid #eee;
+  border-top: 2px solid #eee;
+}
+
+.page-title {
+  font-size: 3rem;
 }

@@ -5,12 +5,13 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Header from "./components/Header";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Resume from "./pages/Resume";
+import Header from "./components/Header/Header";
+import Contact from "./pages/Contact/Contact";
+import Home from "./pages/Home/Home";
+import Resume from "./pages/Resume/Resume";
 import "./app.scss";
 
+// NOTE:
 const Layout = () => (
   <>
     <Header />
