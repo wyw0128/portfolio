@@ -6,25 +6,25 @@ import "./Resume.scss";
 const timelineExperienceData = [
   {
     year: "2022",
-    company: "company1",
+    company: "CarryU Pty, Ltd, Sydney",
     title: "Front-end Developer",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus debitis fugiat doloremque reiciendis dignissimos, aliquam doloribus facere quia repellat accusantium aliquid saepe. Ad atque voluptate, vero tempore reprehenderit dolor architecto.",
+      "Designed and developed a modern, optimized, and responsive website for CarryU using Next.js.",
   },
-  {
-    year: "2021",
-    company: "company2",
-    title: "General Accountant",
-    details:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ut ab ullam excepturi optio autem sit asperiores veniam adipisci laudantium ipsa suscipit odit ea eos at possimus consectetur, dicta magnam?",
-  },
-  {
-    year: "2020",
-    company: "company3",
-    title: "General Accountant",
-    details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur accusantium consectetur illo rerum. Asperiores sint cupiditate placeat nulla voluptatibus, culpa ullam dolorem cum eos deleniti delectus officiis sed dolor.",
-  },
+  // {
+  //   year: "2021",
+  //   company: "company2",
+  //   title: "General Accountant",
+  //   details:
+  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ut ab ullam excepturi optio autem sit asperiores veniam adipisci laudantium ipsa suscipit odit ea eos at possimus consectetur, dicta magnam?",
+  // },
+  // {
+  //   year: "2020",
+  //   company: "company3",
+  //   title: "General Accountant",
+  //   details:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur accusantium consectetur illo rerum. Asperiores sint cupiditate placeat nulla voluptatibus, culpa ullam dolorem cum eos deleniti delectus officiis sed dolor.",
+  // },
   // {
   //   year: "2019",
   //   company: "company4",
@@ -40,21 +40,21 @@ const timelineEducationData = [
     company: "UNSW",
     title: "Graduate Certificate in Computing",
     details:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus debitis fugiat doloremque reiciendis dignissimos, aliquam doloribus facere quia repellat accusantium aliquid saepe. Ad atque voluptate, vero tempore reprehenderit dolor architecto.",
+      "The Graduate Certificate in IT at UNSW is a comprehensive program that provides students with the knowledge and skills they need to succeed in the rapidly-evolving field of information technology. Got full mark in COMP9021.",
   },
   {
     year: "2019",
     company: "USYD",
     title: "Master of Professional Accounting",
     details:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ut ab ullam excepturi optio autem sit asperiores veniam adipisci laudantium ipsa suscipit odit ea eos at possimus consectetur, dicta magnam?",
+      "Got master degree of Master of Professional Accounting in USYD in 2019, trained me with attention to detail personality which is good for coding as well.",
   },
   {
     year: "2017",
     company: "BJFU (Beijing Forestry University)",
     title: "Bachelor of Business English",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consequuntur accusantium consectetur illo rerum. Asperiores sint cupiditate placeat nulla voluptatibus, culpa ullam dolorem cum eos deleniti delectus officiis sed dolor.",
+      "Got bachelor degree from BJFU in 2017 and got a GPA of 84 out of 100.",
   },
   // {
   //   year: "2019",
@@ -67,13 +67,14 @@ const timelineEducationData = [
 
 const codingBarData = [
   { name: "JavaScript", percentage: "85%" },
+  { name: "NextJs", percentage: "80%" },
   { name: "ReactJS", percentage: "80%" },
-  { name: "HTML/CSS/SASS", percentage: "90%" },
-  { name: "Python", percentage: "85%" },
-  { name: "Git Version Control", percentage: "85%" },
+  { name: "HTML/CSS/SASS", percentage: "85%" },
+  { name: "Python", percentage: "80%" },
+  { name: "Git Version Control", percentage: "80%" },
 ];
 
-const dataBarData = [{ name: "SQL", percentage: "80%" }];
+const dataBarData = [{ name: "SQL", percentage: "75%" }];
 export default function resume() {
   return (
     <div className="page">

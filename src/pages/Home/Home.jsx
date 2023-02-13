@@ -3,7 +3,7 @@ import Button from "../../components/Button/Button";
 import IconCard from "../../components/IconCard/IconCard";
 import Slide from "../../components/Slide/Slide";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
-import CV from "../../assets/pdf/Aria-Wu-Cover-Letter.pdf";
+import CV from "../../assets/pdf/CV.pdf";
 import selfPortrait from "../../assets/images/selfPortrait.jpg";
 import food from "../../assets/images/food.jpg";
 import music from "../../assets/images/music.jpg";
@@ -85,11 +85,6 @@ export default function Home() {
     1 * curSlide
   }rem))`;
   // const showSlideClass = `translateX(calc(${-50 * curSlide}%)`;
-
-  console.log(
-    "🚀 ~ file: Home.jsx ~ line 88 ~ Home ~ showSlideClass",
-    showSlideClass
-  );
 
   const preSlideHandler = () => {
     if (curSlide === 0) {
