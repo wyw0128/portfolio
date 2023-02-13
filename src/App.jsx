@@ -37,8 +37,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/cv",
-        element: <CV />,
+        path: "/static/*",
       },
     ],
   },

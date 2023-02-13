@@ -77,10 +77,9 @@ export default function Home() {
   // NOTE:
   useDocumentTitle("Home");
   const [curSlide, setCurSlide] = useState(0);
-  // const downloadCVHandler = () => {
-  //   window.open(process.env.PUBLIC_URL + "/CV.pdf", "_blank");
-  //   window.open(CV, "_blank");
-  // };
+  const downloadCVHandler = () => {
+    window.open(CV, "_blank");
+  };
 
   const showSlideClass = `translateX(calc(${-50 * curSlide}% - ${
     1 * curSlide
@@ -117,12 +116,9 @@ export default function Home() {
             Hi, I am a front-end developer based in Sydney!
           </p>
           <div className="actions">
-            {/* <Button onClick={downloadCVHandler} type="round">
+            <Button onClick={downloadCVHandler} type="round">
               RESUME
-            </Button> */}
-            <a href={CV} target={"_blank"}>
-              RESUME
-            </a>
+            </Button>
             {/* NOTE: mailto */}
             <a href="mailto:yiweiwu0128@gmail.com">CONTACT</a>
           </div>
