@@ -3,7 +3,6 @@ import Button from "../../components/Button/Button";
 import IconCard from "../../components/IconCard/IconCard";
 import Slide from "../../components/Slide/Slide";
 import { useDocumentTitle } from "../../hooks/useDocumentTitle";
-import CV from "../../assets/pdf/CV.pdf";
 import selfPortrait from "../../assets/images/selfPortrait.jpg";
 import food from "../../assets/images/food.jpg";
 import music from "../../assets/images/music.jpg";
@@ -78,7 +77,7 @@ export default function Home() {
   useDocumentTitle("Home");
   const [curSlide, setCurSlide] = useState(0);
   const downloadCVHandler = () => {
-    window.open(CV);
+    window.open(process.env.PUBLIC_URL + "/CV.pdf");
   };
 
   const showSlideClass = `translateX(calc(${-50 * curSlide}% - ${
@@ -119,6 +118,7 @@ export default function Home() {
             <Button onClick={downloadCVHandler} type="round">
               RESUME
             </Button>
+            {/* <a href="../assets/pdf/CV.pdf">RESUME</a> */}
             {/* NOTE: mailto */}
             <a href="mailto:yiweiwu0128@gmail.com">CONTACT</a>
           </div>
