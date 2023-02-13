@@ -2,7 +2,6 @@ import React from "react";
 import ContactCard from "../../components/ContactCard/ContactCard";
 import icons from "../../constants/icons";
 import "./Contact.scss";
-import { iconButtonClasses } from "@mui/material";
 
 const contactData = [
   { content: "0414 045 201", label: "phone" },

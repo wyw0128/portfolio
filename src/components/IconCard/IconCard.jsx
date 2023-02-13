@@ -4,6 +4,7 @@ import "./IconCard.scss";
 
 export default function IconCard(props) {
   const { contentTitle, content } = props;
+  // NOTE:
   const Icon = icons.find((i) => i.label === contentTitle)?.icon;
   return (
     <div className="icon-card-container">

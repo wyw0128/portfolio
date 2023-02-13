@@ -126,11 +126,6 @@ export default function Home() {
       </section>
       <section>
         <h5 className="section-underline">About me</h5>
-        {/* <IconCard
-          svg={<ComputerIcon fontSize="large" />}
-          contentTitle="Front-end Dev"
-          content="dvfsefs"
-        /> */}
         <div className="icon-cards">
           {iconCardData.map((data, index) => (
             <div key={index} className="icon-card-wrapper">
@@ -142,28 +137,17 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section
-        className="favorites"
-        // style={{
-        //   overflow: "hidden",
-        // }}
-      >
+      <section className="favorites">
         <h5 className="section-underline">Favourates</h5>
         <div
           className="sliders-container"
           style={{
-            //   display: "flex",
-            //   flexWrap: "nowrap",
             transform: showSlideClass,
             transitionDuration: "0.5s",
           }}
         >
           {slidesData.map((data, index) => (
-            <div
-              key={index}
-              className="slide-wrapper"
-              // style={{ flexBasis: "48%", flexShrink: 0, padding: 10 }}
-            >
+            <div key={index} className="slide-wrapper">
               <Slide label={data.label} content={data.content} img={data.img} />
             </div>
           ))}

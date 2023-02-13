@@ -8,8 +8,16 @@ const timelineExperienceData = [
     year: "2022",
     company: "CarryU Pty, Ltd, Sydney",
     title: "Front-end Developer",
-    details:
-      "Designed and developed a modern, optimized, and responsive website for CarryU using Next.js.",
+    details: `Designed and developed a modern, optimized, and responsive website for CarryU using Next.js. 
+    <br />
+    <br /> Technique tool: 
+    React, Next.js, Styled Components, JavaScript (ES6+), HTML, CSS, Git, Storybook,
+    Sanity. 
+    <br />
+    <br />Key responsibility: 
+    <br />Built various popular, usable and customisable Web Components like Accordion, Carousel and more. 
+    <br />Collaborating with a senior developer, a designer, and a scrum master within an agile team involves working together to achieve common goals and deliver high-quality software. 
+    <br />Collaborating with designers transforming creative designs from Figma into web components and applications. `,
   },
   // {
   //   year: "2021",

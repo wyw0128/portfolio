@@ -10,7 +10,10 @@ export default function TimelineCard(props) {
         <span className="company">{company}</span>
       </div>
       <p className="timeline-title">{title}</p>
-      <p className="description">{details}</p>
+      <p
+        className="description"
+        dangerouslySetInnerHTML={{ __html: details }}
+      />
     </div>
   );
 }

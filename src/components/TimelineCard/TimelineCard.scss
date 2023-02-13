@@ -16,13 +16,13 @@
   position: absolute;
   top: 1.2rem;
   left: -1.5rem;
-}
 
-.year {
-  padding: 8px 20px;
-  border: 2px solid $dark-grey;
-  border-radius: 1.8rem;
-  background-color: white;
+  .year {
+    padding: 8px 20px;
+    border: 2px solid $dark-grey;
+    border-radius: 1.8rem;
+    background-color: white;
+  }
 }
 
 .timeline-title {
