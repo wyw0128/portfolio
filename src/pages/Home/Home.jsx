@@ -8,6 +8,7 @@ import food from "../../assets/images/food.jpg";
 import music from "../../assets/images/music.jpg";
 import game from "../../assets/images/game.jpg";
 import movie from "../../assets/images/movie.jpg";
+import CV from "../../assets/CV.pdf";
 import "./Home.scss";
 
 const iconCardData = [
@@ -77,7 +78,8 @@ export default function Home() {
   useDocumentTitle("Home");
   const [curSlide, setCurSlide] = useState(0);
   const downloadCVHandler = () => {
-    window.open(process.env.PUBLIC_URL + "/CV.pdf");
+    // window.open(process.env.PUBLIC_URL + "/CV.pdf", "_blank");
+    window.open(CV, "_blank");
   };
 
   const showSlideClass = `translateX(calc(${-50 * curSlide}% - ${
