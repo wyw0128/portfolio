@@ -8,8 +8,9 @@ import food from "../../assets/images/food.jpg";
 import music from "../../assets/images/music.jpg";
 import game from "../../assets/images/game.jpg";
 import movie from "../../assets/images/movie.jpg";
-import CV from "../../assets/CV.pdf";
+// import CV from "./CV.pdf";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 
 const iconCardData = [
   {
@@ -78,7 +79,7 @@ export default function Home() {
   useDocumentTitle("Home");
   const [curSlide, setCurSlide] = useState(0);
   const downloadCVHandler = () => {
-    window.open(CV, "_blank");
+    window.open("https://cv.tiiny.site/", "_blank");
   };
 
   const showSlideClass = `translateX(calc(${-50 * curSlide}% - ${

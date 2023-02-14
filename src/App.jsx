@@ -9,7 +9,6 @@ import Header from "./components/Header/Header";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Resume from "./pages/Resume/Resume";
-import CV from "./assets/CV.pdf";
 import "./app.scss";
 
 // NOTE:
@@ -36,9 +35,9 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      {
-        path: "/static/*",
-      },
+      // {
+      //   path: "/static/*",
+      // },
     ],
   },
 ]);
