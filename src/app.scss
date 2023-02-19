@@ -3,6 +3,9 @@
 .App {
   background-color: $primary;
   padding: 5% 10%;
+  @media screen and (max-width: $mobile) {
+    padding: 1.5rem;
+  }
   .app-container {
     padding: 3rem 6rem;
     background-color: white;
@@ -53,7 +56,6 @@ h5 {
 
 .page {
   padding: 1.5rem;
-  // height: 100vh;
 }
 
 .page-title-container {
