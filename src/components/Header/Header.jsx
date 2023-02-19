@@ -26,7 +26,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="header">
+    <div>
       <div className="header-container">
         <h2 className="header-name">
           <strong>Aria</strong> Wu
@@ -49,18 +49,6 @@ export default function Header() {
               {link.name}
             </Button>
           ))}
-          {/* {linksData
-            .filter((link) => link.name === "Contact")
-            .map((link, index) => (
-              <Button
-                key={index}
-                onClick={() => {
-                  navigateHandler(link.path);
-                }}
-              >
-                {link.name}
-              </Button>
-            ))} */}
         </div>
       </div>
     </div>

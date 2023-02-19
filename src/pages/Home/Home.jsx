@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import IconCard from "../../components/IconCard/IconCard";
 import Slide from "../../components/Slide/Slide";
@@ -10,7 +10,6 @@ import game from "../../assets/images/game.jpg";
 import movie from "../../assets/images/movie.jpg";
 // import CV from "./CV.pdf";
 import "./Home.scss";
-import { Link } from "react-router-dom";
 
 const iconCardData = [
   {
@@ -78,14 +77,24 @@ export default function Home() {
   // NOTE:
   useDocumentTitle("Home");
   const [curSlide, setCurSlide] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const downloadCVHandler = () => {
     window.open("https://cv.tiiny.site/", "_blank");
   };
 
-  const showSlideClass = `translateX(calc(${-50 * curSlide}% - ${
-    1 * curSlide
-  }rem))`;
-  // const showSlideClass = `translateX(calc(${-50 * curSlide}%)`;
+  const showSlideClass =
+    windowWidth <= 500
+      ? `translateX(calc(${-100 * curSlide}% - ${0.5 * curSlide}rem)`
+      : `translateX(calc(${-50 * curSlide}% - ${1 * curSlide}rem))`;
 
   const preSlideHandler = () => {
     if (curSlide === 0) {

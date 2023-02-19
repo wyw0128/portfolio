@@ -1,10 +1,6 @@
 import * as React from "react";
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-  Route,
-} from "react-router-dom";
+import { useRef, useState, useEffect } from "react";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
@@ -35,9 +31,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      // {
-      //   path: "/static/*",
-      // },
     ],
   },
 ]);

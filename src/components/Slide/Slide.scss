@@ -9,6 +9,12 @@
   top: -18px;
   left: -15px;
 }
+.content-container {
+  // white-space: nowrap;
+  height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .slide-contents-container {
   display: grid;
   grid-template-columns: 1fr 2fr;

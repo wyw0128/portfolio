@@ -26,7 +26,7 @@ export default function Slide(props) {
         //   alignItems: "center",
         // }}
       >
-        <div>
+        <div className="content-container">
           {/* <div style={{ paddingLeft: 24, flex: 1 }}> */}
           <p>{content.contentDetail}</p>
           <p>{content.contentName}</p>

@@ -1,4 +1,5 @@
 @import "styles/colors";
+@import "styles/variables.js";
 .App {
   background-color: $primary;
   padding: 5% 10%;
@@ -6,6 +7,9 @@
     padding: 3rem 6rem;
     background-color: white;
     border-radius: 40px;
+    @media screen and (max-width: $mobile) {
+      padding: 1rem;
+    }
   }
 }
 

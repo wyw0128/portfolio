@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import TimelineCard from "../../components/TimelineCard/TimelineCard";
 import SkillBar from "../../components/SkillBar/SkillBar";
 import "./Resume.scss";
@@ -83,13 +83,26 @@ const codingBarData = [
 ];
 
 const dataBarData = [{ name: "SQL", percentage: "75%" }];
-export default function resume() {
+export default function Resume() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const timelineClass =
+    windowWidth <= 500 ? "timelines " : "timelines two-column-grid";
   return (
     <div className="page">
       <div className="page-title-container grey-container">
         <h2 className="page-title">Resume</h2>
       </div>
-      <section className="timelines two-column-grid">
+      <section className={timelineClass}>
         <div className="experience">
           <h6 className="timeline-title section-underline">Experience</h6>
           <div className="timeline">
