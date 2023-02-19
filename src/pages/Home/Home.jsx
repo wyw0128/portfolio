@@ -38,7 +38,7 @@ const slidesData = [
   {
     label: "movie",
     content: {
-      contentDetail: `"This is water. What I want is the ocean."`,
+      contentDetail: `"Life is full of possibilities. You just need to know where to look."`,
       contentName: "Soul by Pixar",
       contentType: "Movie",
     },
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
         <div className="basic-info">
           <span>Front-end Developer</span>
-          <h5 className="basic-info-titile">Aria Wu</h5>
+          <h5 className="basic-info-title">Aria Wu</h5>
           <p className="basic-info-content">
             Hi, I am a front-end developer based in Sydney!
           </p>

@@ -19,6 +19,7 @@ button {
     }
     @media screen and (max-width: $mobile) {
       padding: 2px 4px;
+      font-size: 14px;
     }
   }
   &.round {
